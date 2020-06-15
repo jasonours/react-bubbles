@@ -118,6 +118,8 @@ const ColorList = ({ colors, updateColors }) => {
           </div>
         </form>
       )}
+
+      {/* Stretch */}
       <form onSubmit={addNewColor}>  
         <legend>ADD COLOR</legend>
         <label>
@@ -126,7 +128,8 @@ const ColorList = ({ colors, updateColors }) => {
             onChange={e => 
               setNewColor({ 
                 ...newColor, 
-                color: e.target.value })}
+                color: e.target.value })
+            }
             value={newColor.color}
           />
         </label>
